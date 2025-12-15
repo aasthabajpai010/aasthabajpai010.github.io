@@ -1,0 +1,13 @@
+{
+  "name": "portfolio-website",
+  "version": "1.0.0",
+  "description": "Portfolio website for Aastha Bajpai",
+  "scripts": {
+    "start": "npx http-server -p 8080 -o",
+    "serve": "npx http-server -p 8080"
+  },
+  "keywords": ["portfolio", "website"],
+  "author": "Aastha Bajpai",
+  "license": "MIT"
+}
+
