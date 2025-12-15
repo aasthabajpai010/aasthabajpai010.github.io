@@ -1,37 +1,46 @@
 # Portfolio Website
 
-A modern, responsive portfolio website for Aastha Bajpai.
+A modern, responsive personal portfolio website built using **HTML, CSS, and JavaScript**.
+
+## Live Demo
+🔗 https://aasthabajpai010.github.io
+
+## Technologies Used
+- HTML5
+- CSS3
+- JavaScript
+- Git & GitHub
+- GitHub Pages (Deployment)
 
 ## How to Run Locally
 
-### Option 1: Using Node.js (Recommended)
-1. Make sure you have Node.js installed
-2. Run the following command in the terminal:
-   ```bash
-   npm start
-   ```
-3. The website will open automatically in your browser at `http://localhost:8080`
+### Option 1: Open Directly in Browser
+1. Download or clone the repository
+2. Open `index.html` in any modern web browser
 
-
-
-### Option 2: Direct File Opening
-Simply open `index.html` directly in your web browser. However, some features may not work due to browser security restrictions.
-
-### Option 4: VS Code Live Server Extension
-1. Install the "Live Server" extension in VS Code
+### Option 2: Using VS Code Live Server (Recommended)
+1. Install the **Live Server** extension in VS Code
 2. Right-click on `index.html`
-3. Select "Open with Live Server"
+3. Select **Open with Live Server**
 
-## Files Structure
-- `index.html` - Main HTML file
-- `styles.css` - All styling and design
-- `script.js` - JavaScript functionality
-- `assets/images/` - Image assets
+## Project Structure
+portfolio/
+│── index.html
+│── styles.css
+│── script.js
+│── assets/
+│ └── images/
+
 
 ## Features
-- Responsive design for all devices
+- Responsive design for mobile, tablet, and desktop
 - Smooth scrolling navigation
-- Interactive animations
-- Contact form
-- Mobile-friendly hamburger menu
+- Interactive UI animations
+- Clean and modern layout
+- Easy to customize
 
+## Author
+**Aastha Bajpai**  
+MCA Student | Aspiring Web Developer  
+🔗 GitHub: https://github.com/aasthabajpai010  
+🔗 LinkedIn: (www.linkedin.com/in/aastha-bajpai-6696992ba)
