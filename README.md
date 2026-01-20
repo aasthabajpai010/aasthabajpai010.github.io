@@ -6,8 +6,8 @@ A modern, responsive personal portfolio website built using **HTML, CSS, and Jav
 🔗 https://aasthabajpai010.github.io
 
 ## Technologies Used
-- HTML5
-- CSS3
+- HTML
+- CSS
 - JavaScript
 - Git & GitHub
 - GitHub Pages (Deployment)
