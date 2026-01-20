@@ -491,7 +491,7 @@ section {
     color: var(--text-secondary);
 }
 
-/* ===== Skills Section ===== */
+/* ===== Skills Section ===== 
 .skills-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -506,6 +506,33 @@ section {
     border-radius: 12px;
     transition: var(--transition);
     border: 2px solid transparent;
+}
+*/
+.skills-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    justify-items: center; /* center boxes in each row */
+}
+
+.skill-category {
+    background-color: var(--bg-secondary);
+    padding: 1.5rem;
+    border-radius: 12px;
+    transition: var(--transition);
+    border: 2px solid transparent;
+    width: 100%;
+    max-width: 250px; /* keeps all boxes the same size */
+    text-align: center; /* centers text inside box */
+}
+
+@media (max-width: 768px) {
+    .skills-list {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1.5rem;
+    }
 }
 
 .skill-category:hover {
@@ -530,8 +557,26 @@ section {
     padding: 0;
     margin: 0;
 }
-
 .skill-items li {
+    color: var(--text-primary);
+    font-size: 1rem;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; /* space between icon and text */
+}
+
+.skill-items li:last-child {
+    border-bottom: none;
+}
+
+.skill-items li::before {
+    content: none; /* remove the default ▸ bullet */
+}
+
+
+/*.skill-items li {
     color: var(--text-primary);
     font-size: 1rem;
     padding: 0.5rem 0;
@@ -547,7 +592,7 @@ section {
     color: var(--primary-color);
     font-weight: bold;
     margin-right: 0.5rem;
-}
+}*/
 
 /* ===== Tools Section ===== */
 .tools {
@@ -563,7 +608,7 @@ section {
     margin: 0 auto;
 }
 
-.tool-item {
+/*.tool-item {
     background-color: var(--bg-primary);
     padding: 1rem 2rem;
     border-radius: 8px;
@@ -580,6 +625,21 @@ section {
     box-shadow: var(--shadow-md);
     border-color: var(--primary-color);
     color: var(--primary-color);
+}
+*/
+.tool-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; /* space between icon and text */
+}
+
+.tool-item i {
+    font-size: 1.2rem; /* icon size */
+    transition: transform 0.3s ease;
+}
+
+.tool-item:hover i {
+    transform: scale(1.2); /* icon grows slightly on hover */
 }
 
 /* ===== Experience Section ===== */
