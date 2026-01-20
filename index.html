@@ -12,6 +12,8 @@
   rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
 />
+<!-- Particles.js -->
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 
 </head>
 <body>
@@ -54,8 +56,16 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- Hero Section >
     <section id="home" class="hero">
+        <!- Particle background >
+    <div id="particles-js"></div>
+
+    <div class="container">
+        <div class="hero-content">
+            <!-existing hero content >
+        </div>
+    </div>
         <div class="hero-background">
             <div class="nit-logo-bg"></div>
         </div>
@@ -63,7 +73,7 @@
             <div class="hero-content">
                 <div class="hero-image-wrapper">
                     <div class="hero-image">
-                        <img src="assets/images/profile-pic.jpeg" alt="Aastha Bajpai" id="profile-pic" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <img src="assets/images/me.jpg" alt="Aastha Bajpai" id="profile-pic" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                         <div class="profile-placeholder" style="display: none;">
                             <svg width="80" height="80" viewBox="0 0 24 24" fill="currentColor">
                                 <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
@@ -81,12 +91,36 @@
                         <a href="#contact" class="btn btn-primary">Get In Touch</a>
                         <a href="assets/AASTHA_BAJPAI_resume.pdf" class="btn btn-secondary" id="resume-btn" target="_blank" rel="noopener noreferrer">
     View Resume </a>
-                        <!--a href="assets\AASTHA_BAJPAI_resume.pdf" class="btn btn-secondary" id="resume-btn" download>Download Resume</a-->
+                        <!-a href="assets\AASTHA_BAJPAI_resume.pdf" class="btn btn-secondary" id="resume-btn" download>Download Resume</a-->
                         
 <!--iframe src="assets/AASTHA_BAJPAI_resume.pdf" width="100%" height="600px" style="border:none;">
 </iframe-->
 
-                    </div>
+                    <!--/div-->
+                    <section id="home" class="hero">
+    <!-- Particle background -->
+    <div id="particles-js"></div>
+
+    <div class="container hero-content">
+        <div class="hero-image-wrapper">
+            <div class="hero-image">
+                <img src="assets/images/me.jpg" alt="Aastha Bajpai" id="profile-pic">
+            </div>
+        </div>
+        <div class="hero-text">
+            <h1 class="hero-title">
+                <span class="greeting">Hi, I'm</span>
+                <span class="name">Aastha Bajpai</span>
+            </h1>
+            <p class="hero-subtitle">MCA Student | Aspiring Web Developer<br>Frontend Development | HTML | CSS | JavaScript</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                <a href="assets/AASTHA_BAJPAI_resume.pdf" class="btn btn-secondary" target="_blank">View Resume</a>
+            </div>
+        </div>
+    </div>
+</section>
+
                     <div class="social-links">
                         <a href="https://www.linkedin.com/in/aastha-bajpai-6696992ba" target="_blank" class="social-link" aria-label="LinkedIn">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
@@ -110,7 +144,7 @@
         <div class="scroll-indicator">
             <span></span>
         </div>
-    </section>
+    </section-->
 
     <!-- About Section -->
     <section id="about" class="about">
@@ -255,38 +289,55 @@
 
 
     <!-- Experience Section -->
-    <section id="experience" class="experience">
-        <div class="container">
-            <h2 class="section-title">Experience</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <div class="timeline-date">Feb 2025 – Present</div>
-                        <h3 class="timeline-title">Coordinator</h3>
-                        <h4 class="timeline-company">Society of Computer Science and Engineering, NIT Jamshedpur</h4>
-                    </div>
+    <<!-- Experience Section -->
+<section id="experience" class="experience">
+    <div class="container">
+        <h2 class="section-title">Experience</h2>
+        <div class="timeline">
+
+            <!-- Coordinator -->
+            <div class="timeline-item">
+                <div class="timeline-icon coordinator">
+                    <i class="fas fa-briefcase"></i>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <div class="timeline-date">Sept 2024 – Present</div>
-                        <h3 class="timeline-title">Creative & Content Team Member</h3>
-                        <h4 class="timeline-company">E-Cell, NIT Jamshedpur</h4>
-                        <ul class="timeline-description">
-                            <li>Contributed to digital content creation and online engagement</li>
-                            <li>Collaborated with team members on creative initiatives</li>
-                        </ul>
-                    </div>
+                <div class="timeline-content">
+                    <h3 class="timeline-title">Technical Coordinator</h3>
+                    <h4 class="timeline-company">Society of Computer Science & Engineering, NIT Jamshedpur</h4>
+                    <div class="timeline-date">Feb 2025 – Present</div>
+                    <ul class="timeline-description">
+                        <li>Collaborated with peers to organize technical activities and coding discussions</li>
+                        <li>Managed team communications and scheduled events efficiently</li>
+                    </ul>
                 </div>
             </div>
+
+            <!-- Creative & Content -->
+            <div class="timeline-item">
+                <div class="timeline-icon creative">
+                    <i class="fas fa-lightbulb"></i>
+                </div>
+                <div class="timeline-content">
+                    <h3 class="timeline-title">Creative Content Coordinator</h3>
+                    <h4 class="timeline-company">E-Cell, NIT Jamshedpur</h4>
+                    <div class="timeline-date">Sept 2024 – Present</div>
+                    <ul class="timeline-description">
+                        <li>Worked in a team-driven environment, contributing to planning and execution</li>
+                        <li>Designed engaging digital content and collaborated on creative campaigns</li>
+                    </ul>
+                </div>
+            </div>
+
         </div>
-    </section>
+    </div>
+</section>
+
 
     <!-- Projects Section -->
     <section id="projects" class="projects">
         <div class="container">
             <h2 class="section-title">Projects</h2>
             <div class="projects-grid">
-                <div class="project-card">
+                <!--div class="project-card">
                     <div class="project-header">
                         <h3 class="project-title">LeetCode Tracker <span class="project-status">(In Progress)</span></h3>
                     </div>
@@ -297,8 +348,8 @@
                         <a href="#" class="project-link" target="_blank">GitHub</a>
                         <a href="#" class="project-link" target="_blank">Live Demo</a>
                     </div>
-                </div>
-                <div class="project-card">
+                </div-->
+                <!--div class="project-card">
                     <div class="project-header">
                         <h3 class="project-title">Portfolio Website <span class="project-status">(Completed)</span></h3>
                     </div>
@@ -310,6 +361,88 @@
                         <a href="https://aasthabajpai010.github.io" class="project-link" target="_blank">Live Demo</a>
                     </div>
                 </div>
+                <div class="project-card">
+    <div class="project-header">
+        <h3 class="project-title">
+            Student Expense Tracker <span class="project-status">(Completed)</span>
+        </h3>
+    </div-->
+    <div class="project-card">
+    <div class="project-header">
+        <h3 class="project-title">
+    <span class="project-icon-wrapper">
+        <i class="fas fa-laptop-code"></i>
+    </span>
+    Portfolio Website <span class="project-status">(Completed)</span>
+</h3>
+
+    </div>
+
+    <p class="project-description">
+        A modern, responsive personal portfolio website designed to showcase projects,
+        technical skills, and professional profile with a clean and user-friendly interface.
+    </p>
+
+    <p class="project-tech-text">
+        Built using HTML, CSS, and JavaScript with Git and GitHub for version control
+    </p>
+
+    <p class="project-focus">
+        Focused on responsive design, smooth navigation, interactive UI elements,
+        and deployment using GitHub Pages
+    </p>
+
+    <div class="project-links">
+        <a href="https://github.com/aasthabajpai010/aasthabajpai010.github.io"
+           class="project-link" target="_blank">
+            GitHub
+        </a>
+
+        <a href="https://aasthabajpai010.github.io"
+           class="project-link" target="_blank">
+            Live Demo
+        </a>
+    </div>
+</div>
+
+<div class="project-card">
+    <div class="project-header">
+        <h3 class="project-title project-title-row">
+    <i class="fas fa-coins expense-icon"></i>
+    Student Expense Tracker
+    <span class="project-status">(In Progress)</span>
+</h3>
+
+
+
+    </div>
+
+    <p class="project-description">
+        Full-stack MERN application to help students track daily expenses, manage budgets,
+        and visualize spending patterns through an interactive dashboard.
+    </p>
+
+    <p class="project-tech-text">
+        Built using React + Vite for frontend and Node.js, Express, MongoDB Atlas for backend
+    </p>
+
+    <p class="project-focus">
+        Implemented JWT authentication, REST APIs, secure backend, and responsive UI
+    </p>
+
+    <div class="project-links">
+        <a href="https://github.com/aasthabajpai010/student-expense-tracker" 
+           class="project-link" target="_blank">
+            GitHub
+        </a>
+
+        <a href="https://student-expense-tracker-frontend-qv10ebw3p.vercel.app" 
+           class="project-link" target="_blank">
+            Live Demo
+        </a>
+    </div>
+</div>
+
                 <div class="project-card">
                     <div class="project-header">
                         <h3 class="project-title">Academic Mini Projects</h3>
@@ -328,25 +461,67 @@
         </div>
     </section>
 
-    <!-- Education Section -->
+    < Education Section 
     <section id="education" class="education">
         <div class="container">
             <h2 class="section-title">Education</h2>
             <div class="education-grid">
-                <div class="education-card">
-                    <div class="education-icon">🎓</div>
+                <!--div class="education-card">
+                    
+                    <!--div class="education-icon">🎓</div>
+                        <div class="education-icon">
+        <img src="assets/images/nitjsr_logo.jpg" alt="NIT Jamshedpur Logo" class="edu-logo">
+    </div>
+
                     <h3 class="education-degree">Master of Computer Applications (MCA)</h3>
                     <h4 class="education-institute">National Institute of Technology Jamshedpur</h4>
                     <p class="education-year">2024 – 2027</p>
                 </div>
                 <div class="education-card">
-                    <div class="education-icon">🎓</div>
+                    <!--div class="education-icon">🎓</div>
+                    <div class="education-icon">
+        <img src="assets/images/csjmu_logo.jpg" alt="CSJMU Kanpur Logo" class="edu-logo">
+    </div>
                     <h3 class="education-degree">Bachelor of Computer Applications (BCA)</h3>
                     <h4 class="education-institute">CSJMU Kanpur</h4>
                 </div>
             </div>
         </div>
-    </section>
+    </section-->
+<!-- Education Section -->
+<!-- MCA Card -->
+<div class="education-card">
+    <div class="education-left">
+        <div class="education-icon">
+            <img src="assets/images/nitjsr_logo.jpg" alt="NIT Jamshedpur Logo" class="edu-logo">
+        </div>
+        <div class="education-info">
+            <h4 class="education-institute">National Institute of Technology Jamshedpur</h4>
+            <h3 class="education-degree">
+                Master of Computer Applications (MCA) 
+                <span class="education-year"> 2024 – 2027</span>
+            </h3>
+        </div>
+    </div>
+</div>
+
+<!-- BCA Card -->
+<div class="education-card">
+    <div class="education-left">
+        <div class="education-icon highlight-bg">
+            <img src="assets/images/csjmu_logo.png" alt="CSJMU Kanpur Logo" class="edu-logo">
+        </div>
+        <div class="education-info">
+            <h4 class="education-institute">CSJMU Kanpur</h4>
+            <h3 class="education-degree">
+                Bachelor of Computer Applications (BCA) 
+                <span class="education-year"></span>
+            </h3>
+        </div>
+    </div>
+</div>
+
+</section>
 
     <!-- Contact Section -->
     <section id="contact" class="contact">

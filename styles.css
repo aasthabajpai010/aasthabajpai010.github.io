@@ -959,7 +959,7 @@ section {
     min-height: 120px;
 }
 
-/* ===== Footer ===== */
+/* ===== Footer =====
 .footer {
     background-color: var(--text-primary);
     color: white;
@@ -969,7 +969,35 @@ section {
 
 .footer p {
     margin: 0.5rem 0;
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 0.8);}
+*/
+/* Footer base style */
+.footer {
+    background-color: #222;  /* dark background */
+    color: #fff;             /* light text */
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Footer in dark mode */
+body.dark-mode .footer {
+    background-color: #121212;  /* slightly different dark background */
+    color: #fff;                 /* make text white for visibility */
+}
+
+/* Links in footer */
+.footer a {
+    color: #1e90ff;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Links in dark mode footer */
+body.dark-mode .footer a {
+    color: #4da6ff;
 }
 
 /* ===== Scroll to Top Button ===== */
@@ -1080,13 +1108,79 @@ section {
         grid-template-columns: 1fr;
     }
 
-    .timeline {
+    /*.timeline {
         padding-left: 1.5rem;
     }
 
     .timeline-item {
         padding-left: 1.5rem;
-    }
+    }*/
+    .timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.timeline-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    background: rgba(255,255,255,0.05);
+    padding: 15px;
+    border-radius: 12px;
+    transition: box-shadow 0.3s ease;
+}
+
+.timeline-item:hover {
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.timeline-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: white;
+    font-size: 24px;
+    flex-shrink: 0;
+}
+
+.timeline-icon.coordinator {
+    background: linear-gradient(135deg, #FF6F61, #FF8A65); /* coral gradient */
+}
+
+.timeline-icon.creative {
+    background: linear-gradient(135deg, #FFD700, #FFC107); /* gold/yellow */
+}
+
+.timeline-content {
+    flex: 1;
+}
+
+.timeline-title {
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+
+.timeline-company {
+    font-weight: 500;
+    color: #aaa;
+    margin-bottom: 5px;
+}
+
+.timeline-date {
+    font-size: 0.9rem;
+    color: #999;
+    margin-bottom: 10px;
+}
+
+.timeline-description {
+    list-style: disc;
+    padding-left: 20px;
+}
+
 
     .scroll-top {
         bottom: 20px;
@@ -1117,5 +1211,132 @@ section {
     .name {
         font-size: 1.75rem;
     }
+}
+
+.project-icon-wrapper {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #ff7a18, #ffb347);
+    margin-right: 10px;
+    box-shadow: 0 6px 15px rgba(255, 122, 24, 0.4);
+}
+
+.project-icon-wrapper i {
+    color: #ffffff;
+    font-size: 1.3rem;
+}
+.expense-icon {
+    font-size: 1.6rem;
+    background: linear-gradient(135deg, #FFD700, #FF8C00, #FF3D00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 2px 6px rgba(255, 140, 0, 0.6));
+}
+/* Make grid side by side */
+.education-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap; /* wraps on smaller screens */
+}
+
+/* Card layout */
+.education-card {
+    flex: 1 1 45%; /* 45% width for two cards side by side */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    border-radius: 12px;
+    background: rgba(255,255,255,0.05);
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.education-card:hover {
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 25px rgba(247, 244, 244, 0.3);
+}
+
+.education-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.education-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.edu-logo {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+/* Highlighted logo for CSJMU 
+.highlight-bg {
+   /* background: #FFCC00; /* bright yellow circle 
+    padding: 10px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}*/
+
+.education-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.education-institute {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: 5px;
+}
+
+
+.education-degree {
+    font-size: 0.95rem;
+    font-weight: 400;
+    color: var(--text-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.education-year {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--accent-color);
+    margin-left: 10px;
+}
+
+
+/* Make hero section relative to place particles behind content */
+.hero {
+    position: relative;
+    overflow: hidden; /* prevents particles from overflowing outside hero */
+}
+
+/* Make particle canvas cover hero section */
+#particles-js {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0; /* behind content */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1; /* bring content above particles */
 }
 
