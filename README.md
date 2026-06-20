@@ -41,14 +41,10 @@ portfolio-website/
 
 Just double-click `index.html` to open it in your browser. No build step, no dependencies.
 
-### Using a Local Server (recommended — avoids local file/image quirks)
+### Run with Node.js
 
 ```bash
-# Python 3
-python -m http.server 8000
-
-# Node.js
-npx http-server
+npm start
 ```
 
 Then visit `http://localhost:8000`.
