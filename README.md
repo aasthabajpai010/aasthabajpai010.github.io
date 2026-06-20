@@ -26,13 +26,13 @@ portfolio-website/
 ├── index.html                      # Main HTML file
 ├── styles.css                      # All CSS styles
 ├── script.js                       # JavaScript functionality
-├── Aastha_Bajpai_Resume.pdf        # Resume (linked from the Download Resume button)
+├── Aastha_Bajpai.pdf        # Resume (linked from the Download Resume button)
 ├── README.md                       # This file
 ├── .gitignore
 └── assets/
     └── images/
-        ├── profile-pic.jpg         # Profile photo
-        └── nit-logo.jpg            # NIT Jamshedpur logo (background element)
+        ├── profile_pic.jpeg         # Profile photo
+        └── logo.jpg            # NIT Jamshedpur logo (background element)
 ```
 
 ## Getting Started
