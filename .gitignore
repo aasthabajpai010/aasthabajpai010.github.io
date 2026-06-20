@@ -1,0 +1,29 @@
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+
+# Node (in case you ever use live-server, http-server, or a bundler)
+node_modules/
+package-lock.json
+npm-debug.log*
+yarn-error.log*
+
+# Environment variables (if a contact form backend is added later)
+.env
+.env.local
+
+# Build output (if a bundler is introduced later)
+dist/
+build/
+
+# Logs
+*.log
+
+# Misc
+.cache/
