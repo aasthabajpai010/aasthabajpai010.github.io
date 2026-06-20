@@ -56,8 +56,8 @@ Install the **Live Server** extension, right-click `index.html` → **Open with 
 ## Images
 
 Both images are already in place in `assets/images/`:
-- `profile-pic.jpg` — profile photo, displayed in a circular frame in the hero section
-- `nit-logo.jpg` — NIT Jamshedpur logo, shown as a subtle grayscale background element (note: it's a `.jpg`, not `.png` — `styles.css` is wired to match)
+- `profile_pic.jpeg` — profile photo, displayed in a circular frame in the hero section
+- `logo.jpg` — NIT Jamshedpur logo, shown as a subtle grayscale background element (note: it's a `.jpg`, not `.png` — `styles.css` is wired to match)
 
 To swap either image, just replace the file in `assets/images/` with a new one of the same name — no code changes needed.
 
