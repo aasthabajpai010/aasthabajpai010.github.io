@@ -64,7 +64,7 @@ To swap either image, just replace the file in `assets/images/` with a new one o
 ## Deploying to GitHub Pages
 
 1. Create a new **public** GitHub repository (e.g. `portfolio-website`).
-2. Upload all files in this folder — `index.html`, `styles.css`, `script.js`, `Aastha_Bajpai_Resume.pdf`, `README.md`, `.gitignore`, and the `assets/` folder.
+2. Upload all files in this folder — `index.html`, `styles.css`, `script.js`, `Aastha_Bajpai.pdf`, `README.md`, `.gitignore`, and the `assets/` folder.
 3. In the repo, go to **Settings → Pages**, set **Source** to the `main` branch, root folder, and save.
 4. Your site goes live at:
    ```
