@@ -37,15 +37,16 @@ portfolio-website/
 ```
 
 ## Getting Started
-
+ 
 ### Quick Open
-
+ 
 Just double-click `index.html` to open it in your browser. No build step, no dependencies.
-
-### Using Node.js
-
-```bash
+ 
+### Using a Local Server (recommended — avoids local file/image quirks)
+ 
+# Node.js
 npx http-server
+```
 
 Then visit `http://localhost:8000`.
 
