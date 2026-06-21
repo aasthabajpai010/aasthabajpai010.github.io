@@ -44,6 +44,7 @@ Just double-click `index.html` to open it in your browser. No build step, no dep
  
 ### Using a Local Server (recommended — avoids local file/image quirks)
  
+ ```bash
 # Node.js
 npx http-server
 ```
