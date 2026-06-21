@@ -42,8 +42,6 @@ portfolio-website/
 
 Just double-click `index.html` to open it in your browser. No build step, no dependencies.
 
-### Using a Local Server (recommended — avoids local file/image quirks)
-
 # Node.js
 npx http-server
 ```
