@@ -27,13 +27,13 @@ portfolio-website/
 ├── index.html                      # Main HTML file
 ├── styles.css                      # All CSS styles
 ├── script.js                       # JavaScript functionality
-├── Aastha_Bajpai_Resume.pdf        # Resume (linked from the Download Resume button)
+├── Aastha_Bajpai.pdf        # Resume (linked from the Download Resume button)
 ├── README.md                       # This file
 ├── .gitignore
 └── assets/
     └── images/
-        ├── profile-pic.jpg         # Profile photo
-        └── nit-logo.jpg            # NIT Jamshedpur logo (background element)
+        ├── profile_pic.jpeg         # Profile photo
+        └── logo.jpg            # NIT Jamshedpur logo (background element)
 ```
 
 ## Getting Started
@@ -61,15 +61,15 @@ Install the **Live Server** extension, right-click `index.html` → **Open with 
 ## Images
 
 Both images are already in place in `assets/images/`:
-- `profile-pic.jpg` — profile photo, displayed in a circular frame in the hero section
-- `nit-logo.jpg` — NIT Jamshedpur logo, shown as a subtle grayscale background element (note: it's a `.jpg`, not `.png` — `styles.css` is wired to match)
+- `profile_pic.jpeg` — profile photo, displayed in a circular frame in the hero section
+- `logo.jpg` — NIT Jamshedpur logo, shown as a subtle grayscale background element (note: it's a `.jpg`, not `.png` — `styles.css` is wired to match)
 
 To swap either image, just replace the file in `assets/images/` with a new one of the same name — no code changes needed.
 
 ## Deploying to GitHub Pages
 
 1. Create a new **public** GitHub repository (e.g. `portfolio-website`).
-2. Upload all files in this folder — `index.html`, `styles.css`, `script.js`, `Aastha_Bajpai_Resume.pdf`, `README.md`, `.gitignore`, and the `assets/` folder.
+2. Upload all files in this folder — `index.html`, `styles.css`, `script.js`, `Aastha_Bajpai.pdf`, `README.md`, `.gitignore`, and the `assets/` folder.
 3. In the repo, go to **Settings → Pages**, set **Source** to the `main` branch, root folder, and save.
 4. Your site goes live at:
    ```
