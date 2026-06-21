@@ -19,6 +19,18 @@ function handleImageError(img) {
 // Wait for DOM to be fully loaded
 document.addEventListener('DOMContentLoaded', function() {
     
+    // ===== Theme Toggle (Dark/Light Mode) =====
+    const themeToggle = document.getElementById('theme-toggle');
+
+    if (themeToggle) {
+        themeToggle.addEventListener('click', function() {
+            const current = document.documentElement.getAttribute('data-theme');
+            const next = current === 'dark' ? 'light' : 'dark';
+            document.documentElement.setAttribute('data-theme', next);
+            localStorage.setItem('theme', next);
+        });
+    }
+
     // ===== Mobile Navigation Toggle =====
     const hamburger = document.getElementById('hamburger');
     const navMenu = document.getElementById('nav-menu');

@@ -5,6 +5,7 @@ A modern, responsive personal portfolio for **Aastha Bajpai** — MCA student at
 ## Features
 
 - **Modern Design**: Clean teal/cyan gradient theme with smooth scroll animations
+- **Dark / Light Mode**: Toggle button in the navbar, preference saved via `localStorage`, auto-detects system preference on first visit
 - **Fully Responsive**: Desktop, tablet, and mobile layouts
 - **Sections**: Hero, About, Skills, Experience, Projects, Achievements, Education, Contact
 - **Interactive Elements**: Smooth-scroll navigation, scroll-to-top button, mobile hamburger menu, animated cards, working resume download
@@ -26,13 +27,13 @@ portfolio-website/
 ├── index.html                      # Main HTML file
 ├── styles.css                      # All CSS styles
 ├── script.js                       # JavaScript functionality
-├── Aastha_Bajpai.pdf        # Resume (linked from the Download Resume button)
+├── Aastha_Bajpai_Resume.pdf        # Resume (linked from the Download Resume button)
 ├── README.md                       # This file
 ├── .gitignore
 └── assets/
     └── images/
-        ├── profile_pic.jpeg         # Profile photo
-        └── logo.jpg            # NIT Jamshedpur logo (background element)
+        ├── profile-pic.jpg         # Profile photo
+        └── nit-logo.jpg            # NIT Jamshedpur logo (background element)
 ```
 
 ## Getting Started
@@ -41,10 +42,14 @@ portfolio-website/
 
 Just double-click `index.html` to open it in your browser. No build step, no dependencies.
 
-### Run with Node.js
+### Using a Local Server (recommended — avoids local file/image quirks)
 
 ```bash
-npm start
+# Python 3
+python -m http.server 8000
+
+# Node.js
+npx http-server
 ```
 
 Then visit `http://localhost:8000`.
@@ -56,15 +61,15 @@ Install the **Live Server** extension, right-click `index.html` → **Open with 
 ## Images
 
 Both images are already in place in `assets/images/`:
-- `profile_pic.jpeg` — profile photo, displayed in a circular frame in the hero section
-- `logo.jpg` — NIT Jamshedpur logo, shown as a subtle grayscale background element (note: it's a `.jpg`, not `.png` — `styles.css` is wired to match)
+- `profile-pic.jpg` — profile photo, displayed in a circular frame in the hero section
+- `nit-logo.jpg` — NIT Jamshedpur logo, shown as a subtle grayscale background element (note: it's a `.jpg`, not `.png` — `styles.css` is wired to match)
 
 To swap either image, just replace the file in `assets/images/` with a new one of the same name — no code changes needed.
 
 ## Deploying to GitHub Pages
 
 1. Create a new **public** GitHub repository (e.g. `portfolio-website`).
-2. Upload all files in this folder — `index.html`, `styles.css`, `script.js`, `Aastha_Bajpai.pdf`, `README.md`, `.gitignore`, and the `assets/` folder.
+2. Upload all files in this folder — `index.html`, `styles.css`, `script.js`, `Aastha_Bajpai_Resume.pdf`, `README.md`, `.gitignore`, and the `assets/` folder.
 3. In the repo, go to **Settings → Pages**, set **Source** to the `main` branch, root folder, and save.
 4. Your site goes live at:
    ```
@@ -77,7 +82,7 @@ To swap either image, just replace the file in `assets/images/` with a new one o
 cd portfolio-website
 git init
 git add .
-git commit -m "Update portfolio: real projects, skills, achievements"
+git commit -m "Update portfolio: real projects, skills, achievements, dark mode"
 git remote add origin https://github.com/aasthabajpai010/REPO_NAME.git
 git branch -M main
 git push -u origin main
@@ -102,6 +107,10 @@ Edit the CSS variables at the top of `styles.css`:
     --accent-color: #06b6d4;
 }
 ```
+
+### Dark Mode
+
+Dark theme colors live in the `[data-theme="dark"]` block right under `:root` in `styles.css` — edit `--bg-white`, `--bg-light`, `--text-dark`, etc. there to adjust the dark palette. The toggle logic (click handler + `localStorage` persistence) is in `script.js` under "Theme Toggle (Dark/Light Mode)", and the no-flash-on-load detection script sits inline in `index.html`'s `<head>`.
 
 ### Content
 
