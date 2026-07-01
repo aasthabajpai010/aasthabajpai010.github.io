@@ -119,7 +119,6 @@ Toggle logic (click handler + `localStorage`) is in `script.js` under **"Theme T
 
 - [ ] Deploy ERP, BhashaShikho, House Price Predictor and replace disabled **Live Demo** buttons with real URLs
 - [ ] Connect contact form to Formspree or EmailJS (currently frontend-only)
-- [ ] Delete unused `me.jpg` from `assets/images/` if not needed
 
 ## Browser Support
 
