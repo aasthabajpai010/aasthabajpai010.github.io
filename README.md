@@ -4,121 +4,127 @@ A modern, responsive personal portfolio for **Aastha Bajpai** — MCA student at
 
 ## Features
 
-- **Modern Design**: Clean teal/cyan gradient theme with smooth scroll animations
-- **Dark / Light Mode**: Toggle button in the navbar, preference saved via `localStorage`, auto-detects system preference on first visit
+- **Professional Redesign**: Space Grotesk typography, electric teal–purple palette, dot-grid hero background
+- **Dark / Light Mode**: Toggle button in the navbar, preference saved via `localStorage`, auto-detects system theme on first visit
 - **Fully Responsive**: Desktop, tablet, and mobile layouts
 - **Sections**: Hero, About, Skills, Experience, Projects, Achievements, Education, Contact
-- **Interactive Elements**: Smooth-scroll navigation, scroll-to-top button, mobile hamburger menu, animated cards, working resume download
+- **Skill Pills**: Technologies grouped by category (Languages / Frontend / Backend / Databases / CS Fundamentals / Tools) — clean pill layout instead of cards
 - **Real Project Showcase**: AI-Integrated College ERP System, BhashaShikho, House Price Prediction System — each linked to its real GitHub repo
-- **Achievements Section**: NIMCET AIR 519, Postman certification, HackerRank/LeetCode/GeeksforGeeks profiles
+- **Achievements Section**: NIMCET AIR 519, Postman certification, HackerRank / LeetCode / GeeksforGeeks profiles
+- **Working Resume Download**: Directly downloads `Aastha_Bajpai_Resume.pdf`
 
 ## Tech Stack
 
 - **HTML5** — Semantic markup
-- **CSS3** — Grid, Flexbox, custom properties, animations
+- **CSS3** — Grid, Flexbox, CSS custom properties, animations
 - **JavaScript** — Vanilla JS, no frameworks
-- **Google Fonts** — Inter & Playfair Display
+- **Google Fonts** — Space Grotesk (headings) + Inter (body)
 
 ## Project Structure
 
 ```
-portfolio-website/
+PORTFOLIO-WEBSITE/
 │
-├── index.html                      # Main HTML file
-├── styles.css                      # All CSS styles
-├── script.js                       # JavaScript functionality
-├── Aastha_Bajpai.pdf        # Resume (linked from the Download Resume button)
-├── README.md                       # This file
+├── .github/
+├── assets/
+│   └── images/
+│       ├── logo.jpg              # NIT Jamshedpur logo (subtle hero background)
+│       ├── me.jpg                # (unused — can delete)
+│       └── profile-pic.jpg       # Profile photo in hero section
 ├── .gitignore
-└── assets/
-    └── images/
-        ├── profile_pic.jpeg         # Profile photo
-        └── logo.jpg            # NIT Jamshedpur logo (background element)
+├── Aastha_Bajpai_Resume.pdf      # Linked from Download Resume button
+├── index.html                    # Main HTML file
+├── package.json                  # Only present if http-server was installed locally
+├── README.md                     # This file
+├── script.js                     # JavaScript — nav, dark mode, scroll, form
+└── styles.css                    # All CSS styles
 ```
 
 ## Getting Started
- 
+
 ### Quick Open
- 
-Just double-click `index.html` to open it in your browser. No build step, no dependencies.
- 
-### Using a Local Server (recommended — avoids local file/image quirks)
- 
- ```bash
+
+Double-click `index.html` to open it in your browser. No build step, no dependencies.
+
+### Using a Local Server (recommended)
+
+```bash
 # Node.js
 npx http-server
 ```
 
-Then visit `http://localhost:8000`.
+Then visit `http://localhost:8080`.
 
 ### VS Code Live Server
 
-Install the **Live Server** extension, right-click `index.html` → **Open with Live Server**.
+Install the **Live Server** extension → right-click `index.html` → **Open with Live Server**.
 
 ## Images
 
-Both images are already in place in `assets/images/`:
-- `profile_pic.jpeg` — profile photo, displayed in a circular frame in the hero section
-- `logo.jpg` — NIT Jamshedpur logo, shown as a subtle grayscale background element (note: it's a `.jpg`, not `.png` — `styles.css` is wired to match)
+Both images are in `assets/images/` and already wired up in the code:
 
-To swap either image, just replace the file in `assets/images/` with a new one of the same name — no code changes needed.
+- `profile-pic.jpg` — displayed in the hero section (rounded rectangle frame)
+- `logo.jpg` — NIT Jamshedpur logo, shown as a subtle grayscale background element in the hero
+
+To swap either image, replace the file with the same filename — no code changes needed.
 
 ## Deploying to GitHub Pages
 
-1. Create a new **public** GitHub repository (e.g. `portfolio-website`).
-2. Upload all files in this folder — `index.html`, `styles.css`, `script.js`, `Aastha_Bajpai.pdf`, `README.md`, `.gitignore`, and the `assets/` folder.
-3. In the repo, go to **Settings → Pages**, set **Source** to the `main` branch, root folder, and save.
-4. Your site goes live at:
+1. Push all files to a **public** GitHub repository.
+2. Go to **Settings → Pages**, set Source to `main` branch, root folder, and save.
+3. Your site goes live at:
    ```
    https://aasthabajpai010.github.io/REPO_NAME/
    ```
 
-### Using Git from the command line
+### Git commands to push updates
 
 ```bash
 cd portfolio-website
-git init
 git add .
-git commit -m "Update portfolio: real projects, skills, achievements, dark mode"
-git remote add origin https://github.com/aasthabajpai010/REPO_NAME.git
-git branch -M main
-git push -u origin main
+git commit -m "Redesign: Space Grotesk, skill pills, new hero, improved dark mode"
+git push
 ```
-
-## Known Gaps / To-Do
-
-- [ ] Deploy the three featured projects (ERP, BhashaShikho, House Price Predictor) and replace the disabled "Live Demo" buttons with real links — the resume's current live links point to a placeholder `example.com` domain and need updating in both places
-- [ ] Connect the contact form to a real backend or a service like Formspree/EmailJS (it's currently frontend-only and just validates + resets on submit)
-- [ ] Keep Experience section end-dates in sync with the resume going forward
 
 ## Customization
 
 ### Colors
 
-Edit the CSS variables at the top of `styles.css`:
+CSS variables are at the top of `styles.css`:
 
 ```css
 :root {
-    --primary-color: #0f766e;
-    --secondary-color: #14b8a6;
-    --accent-color: #06b6d4;
+    --primary: #06D6A0;      /* electric teal */
+    --secondary: #8B5CF6;    /* purple */
+    --primary-dark: #04B589; /* teal hover state */
 }
 ```
 
+Dark theme overrides are in the `[data-theme="dark"]` block right below.
+
 ### Dark Mode
 
-Dark theme colors live in the `[data-theme="dark"]` block right under `:root` in `styles.css` — edit `--bg-white`, `--bg-light`, `--text-dark`, etc. there to adjust the dark palette. The toggle logic (click handler + `localStorage` persistence) is in `script.js` under "Theme Toggle (Dark/Light Mode)", and the no-flash-on-load detection script sits inline in `index.html`'s `<head>`.
+Toggle logic (click handler + `localStorage`) is in `script.js` under **"Theme Toggle"**. The no-flash-on-load detection is an inline script in `index.html`'s `<head>`.
 
 ### Content
 
-- **Skills**: edit the `.skill-card` items in the Skills section of `index.html`
-- **Projects**: edit the `.project-card` items in the Projects section
-- **Achievements**: edit the `.education-card` items inside `<section id="achievements">`
-- **Experience**: edit the `.timeline-item` entries in the Experience section
+| What to update | Where |
+|---|---|
+| Skills | `.skill-pill` items inside `.skill-group` divs in `index.html` |
+| Projects | `.project-card` blocks in the Projects section |
+| Achievements | `.education-card` blocks inside `<section id="achievements">` |
+| Experience | `.timeline-item` entries in the Experience section |
+| Live Demo links | `href` on `.project-link` anchors in each project card |
+
+## Known Gaps / To-Do
+
+- [ ] Deploy ERP, BhashaShikho, House Price Predictor and replace disabled **Live Demo** buttons with real URLs
+- [ ] Connect contact form to Formspree or EmailJS (currently frontend-only)
+- [ ] Delete unused `me.jpg` from `assets/images/` if not needed
 
 ## Browser Support
 
-Chrome, Firefox, Safari, Edge (latest versions), and mobile browsers (iOS Safari, Chrome Mobile).
+Chrome, Firefox, Safari, Edge (latest), iOS Safari, Chrome Mobile.
 
 ## Author
 
@@ -126,8 +132,7 @@ Chrome, Firefox, Safari, Edge (latest versions), and mobile browsers (iOS Safari
 - Email: 2024aspire68@gmail.com
 - LinkedIn: [aastha-bajpai-6696992ba](https://www.linkedin.com/in/aastha-bajpai-6696992ba)
 - GitHub: [aasthabajpai010](https://github.com/aasthabajpai010)
-- Institute: NIT Jamshedpur
-- Programme: MCA, 2024 – 2027
+- Institute: NIT Jamshedpur · MCA 2024 – 2027
 
 ---
 

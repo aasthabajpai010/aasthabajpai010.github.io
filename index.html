@@ -17,22 +17,23 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="container">
-            <div class="nav-brand">Aastha Bajpai</div>
+            <a href="#home" class="nav-brand">Aastha Bajpai</a>
             <ul class="nav-menu" id="nav-menu">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#experience" class="nav-link">Experience</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#home"         class="nav-link">Home</a></li>
+                <li><a href="#about"        class="nav-link">About</a></li>
+                <li><a href="#skills"       class="nav-link">Skills</a></li>
+                <li><a href="#experience"   class="nav-link">Experience</a></li>
+                <li><a href="#projects"     class="nav-link">Projects</a></li>
                 <li><a href="#achievements" class="nav-link">Achievements</a></li>
-                <li><a href="#education" class="nav-link">Education</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#education"    class="nav-link">Education</a></li>
+                <li><a href="#contact"      class="nav-link">Contact</a></li>
             </ul>
             <div class="nav-actions">
                 <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
@@ -44,177 +45,172 @@
                     </svg>
                 </button>
                 <div class="hamburger" id="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                    <span></span><span></span><span></span>
                 </div>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- Hero -->
     <section id="home" class="hero">
         <div class="hero-background">
             <div class="nit-logo-bg"></div>
         </div>
         <div class="container">
-            <div class="hero-content">
-                <div class="hero-image-wrapper">
-                    <div class="hero-image">
-                        <img src="assets/images/profile_pic.jpeg" alt="Aastha Bajpai" id="profile-pic" onerror="handleImageError(this)">
-                        <div class="profile-placeholder" style="display: none;">
-                            <svg width="80" height="80" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
-                            </svg>
-                        </div>
-                    </div>
+            <div class="hero-text">
+                <div class="hero-eyebrow">MCA Student · NIT Jamshedpur</div>
+                <h1 class="hero-title">
+                    Hi, I'm
+                    <span class="name-gradient">Aastha Bajpai</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Full-Stack Developer specialising in the <strong>MERN stack</strong> — building real-time, AI-integrated web applications that solve real problems.
+                </p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/aastha-bajpai-6696992ba" target="_blank" class="social-link" aria-label="LinkedIn">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                    </a>
+                    <a href="https://github.com/aasthabajpai010" target="_blank" class="social-link" aria-label="GitHub">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                    </a>
+                    <a href="mailto:2024aspire68@gmail.com" class="social-link" aria-label="Email">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                    </a>
                 </div>
-                <div class="hero-text">
-                    <h1 class="hero-title">
-                        <span class="greeting">Hi, I'm</span>
-                        <span class="name">Aastha Bajpai</span>
-                    </h1>
-                    <p class="hero-subtitle">Full-Stack Developer (MERN) &amp; MCA student at NIT Jamshedpur, building real-time, AI-integrated web applications.</p>
-                    <div class="hero-buttons">
-                        <a href="#contact" class="btn btn-primary">Get In Touch</a>
-                        <a href="Aastha_Bajpai_Resume.pdf" class="btn btn-secondary" id="resume-btn" download>Download Resume</a>
-                    </div>
-                    <div class="social-links">
-                        <a href="https://www.linkedin.com/in/aastha-bajpai-6696992ba" target="_blank" class="social-link" aria-label="LinkedIn">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-                            </svg>
-                        </a>
-                        <a href="https://github.com/aasthabajpai010" target="_blank" class="social-link" aria-label="GitHub">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                            </svg>
-                        </a>
-                        <a href="mailto:2024aspire68@gmail.com" class="social-link" aria-label="Email">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
-                            </svg>
-                        </a>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                    <a href="Aastha_Bajpai_Resume.pdf" class="btn btn-secondary" download>Download Resume</a>
+                </div>
+                <div class="hero-stack">
+                    <span class="hero-stack-label">Stack</span>
+                    <span class="stack-chip">React</span>
+                    <span class="stack-chip">Node.js</span>
+                    <span class="stack-chip">MongoDB</span>
+                    <span class="stack-chip">Express</span>
+                    <span class="stack-chip">Socket.IO</span>
+                    <span class="stack-chip">JWT</span>
+                </div>
+            </div>
+            <div class="hero-image-wrapper">
+                <div class="hero-image">
+                    <img src="assets/images/profile-pic.jpg" alt="Aastha Bajpai" onerror="handleImageError(this)">
+                    <div class="profile-placeholder" style="display:none;">
+                        <svg width="80" height="80" viewBox="0 0 24 24" fill="currentColor"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="scroll-indicator">
-            <span></span>
-        </div>
+        <div class="scroll-indicator"><span></span></div>
     </section>
 
-    <!-- About Section -->
+    <!-- About -->
     <section id="about" class="about">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
+            <span class="section-label">About Me</span>
+            <h2 class="section-title">Who I Am</h2>
             <div class="about-content">
-                <div class="about-text">
-                    <p>I'm an MCA student at NIT Jamshedpur and a full-stack web developer working primarily with the MERN stack. I've built and deployed role-based systems with JWT authentication, real-time features using Socket.IO, and AI-integrated tools using the Gemini API — including a complete college ERP platform and a real-time language exchange app. I enjoy turning complex workflows into clean, usable interfaces and I'm always looking to take on new full-stack challenges.</p>
-                    <div class="about-details">
-                        <div class="detail-item">
-                            <span class="detail-label">Location:</span>
-                            <span class="detail-value">Uttar Pradesh, India</span>
-                        </div>
-                        <div class="detail-item">
-                            <span class="detail-label">Institute:</span>
-                            <span class="detail-value">NIT Jamshedpur</span>
-                        </div>
-                        <div class="detail-item">
-                            <span class="detail-label">Graduation:</span>
-                            <span class="detail-value">MCA 2027 &middot; CGPA 7.75</span>
-                        </div>
+                <p>I'm an MCA student at NIT Jamshedpur and a full-stack web developer working primarily with the MERN stack. I've built and deployed role-based systems with JWT authentication, real-time features using Socket.IO, and AI-integrated tools using the Gemini API — including a complete college ERP platform and a real-time language exchange app. I enjoy turning complex workflows into clean, usable interfaces and I'm always looking to take on new full-stack challenges.</p>
+                <div class="about-details">
+                    <div class="detail-item">
+                        <span class="detail-label">Location</span>
+                        <span class="detail-value">Uttar Pradesh, India</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Institute</span>
+                        <span class="detail-value">NIT Jamshedpur</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Graduation</span>
+                        <span class="detail-value">MCA 2027 · CGPA 7.75</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">NIMCET Rank</span>
+                        <span class="detail-value">AIR 519 / 25,000</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Skills Section -->
+    <!-- Skills -->
     <section id="skills" class="skills">
         <div class="container">
-            <h2 class="section-title">Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <div class="skill-icon">JS</div>
-                    <h3 class="skill-name">JavaScript (ES6+)</h3>
+            <span class="section-label">Technical Skills</span>
+            <h2 class="section-title">What I Work With</h2>
+            <p class="section-intro">Technologies I use to build full-stack, production-ready web applications.</p>
+            <div class="skills-container">
+                <div class="skill-group">
+                    <span class="skill-group-label">Languages</span>
+                    <div class="skill-pills">
+                        <span class="skill-pill">JavaScript (ES6+)</span>
+                        <span class="skill-pill">C++</span>
+                        <span class="skill-pill">SQL</span>
+                    </div>
                 </div>
-                <div class="skill-card">
-                    <div class="skill-icon">C++</div>
-                    <h3 class="skill-name">C++</h3>
+                <div class="skill-group">
+                    <span class="skill-group-label">Frontend</span>
+                    <div class="skill-pills">
+                        <span class="skill-pill">React.js</span>
+                        <span class="skill-pill">HTML5</span>
+                        <span class="skill-pill">CSS3</span>
+                        <span class="skill-pill">Zustand</span>
+                        <span class="skill-pill">TanStack Query</span>
+                    </div>
                 </div>
-                <div class="skill-card">
-                    <div class="skill-icon">SQL</div>
-                    <h3 class="skill-name">SQL</h3>
+                <div class="skill-group">
+                    <span class="skill-group-label">Backend</span>
+                    <div class="skill-pills">
+                        <span class="skill-pill">Node.js</span>
+                        <span class="skill-pill">Express.js</span>
+                        <span class="skill-pill">REST APIs</span>
+                        <span class="skill-pill">JWT Auth</span>
+                        <span class="skill-pill">Socket.IO</span>
+                    </div>
                 </div>
-                <div class="skill-card">
-                    <div class="skill-icon">⚛</div>
-                    <h3 class="skill-name">React.js</h3>
+                <div class="skill-group">
+                    <span class="skill-group-label">Databases</span>
+                    <div class="skill-pills">
+                        <span class="skill-pill">MongoDB</span>
+                        <span class="skill-pill">MySQL</span>
+                    </div>
                 </div>
-                <div class="skill-card">
-                    <div class="skill-icon">HTML5</div>
-                    <h3 class="skill-name">HTML5</h3>
+                <div class="skill-group">
+                    <span class="skill-group-label">CS Fundamentals</span>
+                    <div class="skill-pills">
+                        <span class="skill-pill">DSA</span>
+                        <span class="skill-pill">OOP</span>
+                        <span class="skill-pill">DBMS</span>
+                        <span class="skill-pill">Operating Systems</span>
+                        <span class="skill-pill">Computer Networks</span>
+                    </div>
                 </div>
-                <div class="skill-card">
-                    <div class="skill-icon">CSS3</div>
-                    <h3 class="skill-name">CSS3</h3>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">JS</div>
-                    <h3 class="skill-name">Node.js</h3>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">EX</div>
-                    <h3 class="skill-name">Express.js</h3>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">API</div>
-                    <h3 class="skill-name">REST APIs</h3>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">JWT</div>
-                    <h3 class="skill-name">JWT Authentication</h3>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">⚡</div>
-                    <h3 class="skill-name">Socket.IO</h3>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">DB</div>
-                    <h3 class="skill-name">MongoDB</h3>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">DB</div>
-                    <h3 class="skill-name">MySQL</h3>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">Git</div>
-                    <h3 class="skill-name">Git &amp; GitHub</h3>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">PM</div>
-                    <h3 class="skill-name">Postman</h3>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">▲</div>
-                    <h3 class="skill-name">Vercel &amp; Render</h3>
+                <div class="skill-group">
+                    <span class="skill-group-label">Tools</span>
+                    <div class="skill-pills">
+                        <span class="skill-pill">Git & GitHub</span>
+                        <span class="skill-pill">Postman</span>
+                        <span class="skill-pill">VS Code</span>
+                        <span class="skill-pill">Vercel</span>
+                        <span class="skill-pill">Render</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Experience Section -->
+    <!-- Experience -->
     <section id="experience" class="experience">
         <div class="container">
-            <h2 class="section-title">Experience</h2>
+            <span class="section-label">Experience</span>
+            <h2 class="section-title">Where I've Contributed</h2>
             <div class="timeline">
                 <div class="timeline-item">
                     <div class="timeline-content">
                         <div class="timeline-date">Feb 2025 – Feb 2026</div>
                         <h3 class="timeline-title">Technical Coordinator</h3>
-                        <h4 class="timeline-company">Society of Computer Science and Engineering, NIT Jamshedpur</h4>
+                        <h4 class="timeline-company">Society of Computer Science &amp; Engineering · NIT Jamshedpur</h4>
                         <ul class="timeline-description">
-                            <li>Organized 3+ coding competitions and hackathons, driving participation from 80+ students</li>
+                            <li>Organised 3+ coding competitions and hackathons, driving participation from 80+ students</li>
                         </ul>
                     </div>
                 </div>
@@ -222,9 +218,9 @@
                     <div class="timeline-content">
                         <div class="timeline-date">Sep 2024 – Dec 2025</div>
                         <h3 class="timeline-title">Creative &amp; Content Coordinator</h3>
-                        <h4 class="timeline-company">Entrepreneurship Cell (E-Cell), NIT Jamshedpur</h4>
+                        <h4 class="timeline-company">Entrepreneurship Cell (E-Cell) · NIT Jamshedpur</h4>
                         <ul class="timeline-description">
-                            <li>Led digital content and visual branding for 5+ E-Cell events, including summits attended by 150+ students</li>
+                            <li>Led digital content and visual branding for 5+ events, including summits attended by 150+ students</li>
                         </ul>
                     </div>
                 </div>
@@ -232,10 +228,12 @@
         </div>
     </section>
 
-    <!-- Projects Section -->
+    <!-- Projects -->
     <section id="projects" class="projects">
         <div class="container">
-            <h2 class="section-title">Projects</h2>
+            <span class="section-label">Projects</span>
+            <h2 class="section-title">Things I've Built</h2>
+            <p class="section-intro">Full-stack applications — each with a live GitHub repo and real tech decisions.</p>
             <div class="projects-grid">
                 <div class="project-card">
                     <div class="project-header">
@@ -253,8 +251,8 @@
                         <span class="tech-tag">Gemini AI</span>
                     </div>
                     <div class="project-links">
-                        <a href="https://github.com/aasthabajpai010/college-erp" class="project-link" target="_blank">GitHub</a>
-                        <a href="#" class="project-link disabled" target="_blank">Live Demo</a>
+                        <a href="https://github.com/aasthabajpai010/college-erp" class="project-link" target="_blank">↗ GitHub</a>
+                        <a href="#" class="project-link disabled">↗ Live Demo</a>
                     </div>
                 </div>
                 <div class="project-card">
@@ -272,8 +270,8 @@
                         <span class="tech-tag">Stream SDK</span>
                     </div>
                     <div class="project-links">
-                        <a href="https://github.com/aasthabajpai010/bhashasikho" class="project-link" target="_blank">GitHub</a>
-                        <a href="#" class="project-link disabled" target="_blank">Live Demo</a>
+                        <a href="https://github.com/aasthabajpai010/bhashasikho" class="project-link" target="_blank">↗ GitHub</a>
+                        <a href="#" class="project-link disabled">↗ Live Demo</a>
                     </div>
                 </div>
                 <div class="project-card">
@@ -281,7 +279,7 @@
                         <h3 class="project-title">House Price Prediction System</h3>
                         <span class="project-status">Completed</span>
                     </div>
-                    <p class="project-description">An end-to-end machine learning web app predicting house prices from property features, with feature encoding, StandardScaler normalization, and Linear Regression on 500+ records. Deployed as an interactive Streamlit app returning instant predictions with MAE, MSE, and R² metrics.</p>
+                    <p class="project-description">An end-to-end ML web app predicting house prices from property features, with feature encoding, StandardScaler normalisation, and Linear Regression on 500+ records. Deployed as an interactive Streamlit app returning instant predictions with MAE, MSE, and R² metrics.</p>
                     <div class="project-tech">
                         <span class="tech-tag">Python</span>
                         <span class="tech-tag">Scikit-learn</span>
@@ -290,87 +288,91 @@
                         <span class="tech-tag">Streamlit</span>
                     </div>
                     <div class="project-links">
-                        <a href="https://github.com/aasthabajpai010/house-price-prediction" class="project-link" target="_blank">GitHub</a>
-                        <a href="#" class="project-link disabled" target="_blank">Live Demo</a>
+                        <a href="https://github.com/aasthabajpai010/house-price-prediction" class="project-link" target="_blank">↗ GitHub</a>
+                        <a href="#" class="project-link disabled">↗ Live Demo</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Achievements Section -->
+    <!-- Achievements -->
     <section id="achievements" class="achievements">
         <div class="container">
-            <h2 class="section-title">Achievements</h2>
+            <span class="section-label">Achievements</span>
+            <h2 class="section-title">Milestones &amp; Recognition</h2>
             <div class="education-grid">
                 <div class="education-card">
                     <div class="education-icon">🏆</div>
                     <h3 class="education-degree">NIMCET 2024 — AIR 519</h3>
-                    <h4 class="education-institute">Among ~25,000 candidates nationwide; secured admission to NIT Jamshedpur's MCA programme</h4>
+                    <p class="education-institute">Among ~25,000 candidates nationwide; secured admission to NIT Jamshedpur's MCA programme</p>
                 </div>
                 <div class="education-card">
                     <div class="education-icon">📜</div>
                     <h3 class="education-degree">Postman API Fundamentals Student Expert</h3>
-                    <h4 class="education-institute">Certified by Postman (Jul 2025)</h4>
+                    <p class="education-institute">Certified by Postman · Jul 2025</p>
                 </div>
                 <div class="education-card">
                     <div class="education-icon">⭐</div>
                     <h3 class="education-degree">HackerRank — 5-Star in C++ &amp; SQL</h3>
-                    <h4 class="education-institute"><a href="https://www.hackerrank.com/profile/2024aspire68" target="_blank" style="color: var(--primary-color); text-decoration: none;">View Profile →</a></h4>
+                    <p class="education-institute"><a href="https://www.hackerrank.com/profile/2024aspire68" target="_blank" style="color:var(--primary);text-decoration:none;font-weight:500;">View Profile →</a></p>
                 </div>
                 <div class="education-card">
                     <div class="education-icon">💻</div>
-                    <h3 class="education-degree">LeetCode — 200+ Problems Solved</h3>
-                    <h4 class="education-institute"><a href="https://leetcode.com/u/just_dsa/" target="_blank" style="color: var(--primary-color); text-decoration: none;">View Profile →</a></h4>
+                    <h3 class="education-degree">LeetCode — 200+ Problems</h3>
+                    <p class="education-institute"><a href="https://leetcode.com/u/just_dsa/" target="_blank" style="color:var(--primary);text-decoration:none;font-weight:500;">View Profile →</a></p>
                 </div>
                 <div class="education-card">
                     <div class="education-icon">🧩</div>
-                    <h3 class="education-degree">GeeksforGeeks — 60+ Problems Solved</h3>
-                    <h4 class="education-institute"><a href="https://www.geeksforgeeks.org/profile/2024aspcfko" target="_blank" style="color: var(--primary-color); text-decoration: none;">View Profile →</a></h4>
+                    <h3 class="education-degree">GeeksforGeeks — 60+ Problems</h3>
+                    <p class="education-institute"><a href="https://www.geeksforgeeks.org/profile/2024aspcfko" target="_blank" style="color:var(--primary);text-decoration:none;font-weight:500;">View Profile →</a></p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Education Section -->
+    <!-- Education -->
     <section id="education" class="education">
         <div class="container">
-            <h2 class="section-title">Education</h2>
+            <span class="section-label">Education</span>
+            <h2 class="section-title">Academic Background</h2>
             <div class="education-grid">
                 <div class="education-card">
                     <div class="education-icon">🎓</div>
                     <h3 class="education-degree">Master of Computer Applications (MCA)</h3>
-                    <h4 class="education-institute">National Institute of Technology Jamshedpur</h4>
-                    <p class="education-year">2024 – 2027</p>
+                    <p class="education-institute">National Institute of Technology, Jamshedpur</p>
+                    <p class="education-year">2024 – 2027 · CGPA 7.75</p>
                 </div>
                 <div class="education-card">
                     <div class="education-icon">🎓</div>
                     <h3 class="education-degree">Bachelor of Computer Applications (BCA)</h3>
-                    <h4 class="education-institute">CSJMU Kanpur</h4>
+                    <p class="education-institute">Chhatrapati Shahu Ji Maharaj University, Kanpur</p>
+                    <p class="education-year">2019 – 2022 · CGPA 7.56</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- Contact -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
+            <span class="section-label">Contact</span>
+            <h2 class="section-title">Let's Connect</h2>
             <div class="contact-content">
                 <div class="contact-info">
-                    <p class="contact-text">I'm always open to discussing new opportunities, projects, or just having a chat about web development!</p>
+                    <p class="contact-text">I'm always open to discussing new opportunities, projects, or just having a chat about web development. Feel free to reach out!</p>
                     <div class="contact-details">
                         <a href="mailto:2024aspire68@gmail.com" class="contact-item">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
-                            </svg>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
                             <span>2024aspire68@gmail.com</span>
                         </a>
                         <a href="https://www.linkedin.com/in/aastha-bajpai-6696992ba" target="_blank" class="contact-item">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-                            </svg>
-                            <span>LinkedIn Profile</span>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                            <span>linkedin.com/in/aastha-bajpai</span>
+                        </a>
+                        <a href="https://github.com/aasthabajpai010" target="_blank" class="contact-item">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                            <span>github.com/aasthabajpai010</span>
                         </a>
                     </div>
                 </div>
@@ -394,15 +396,13 @@
     <footer class="footer">
         <div class="container">
             <p>&copy; <span id="current-year">2026</span> Aastha Bajpai. All rights reserved.</p>
-            <p>Built with ❤️ using HTML, CSS & JavaScript</p>
+            <p>Built with HTML, CSS &amp; JavaScript</p>
         </div>
     </footer>
 
-    <!-- Scroll to Top Button -->
+    <!-- Scroll to Top -->
     <button class="scroll-top" id="scroll-top" aria-label="Scroll to top">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/>
-        </svg>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/></svg>
     </button>
 
     <script src="script.js"></script>
