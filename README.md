@@ -2,6 +2,8 @@
 
 A modern, responsive personal portfolio for **Aastha Bajpai** — MCA student at NIT Jamshedpur and Full-Stack (MERN) Developer.
 
+🔗 **Live Site**: [aasthabajpai010.github.io](https://aasthabajpai010.github.io)
+
 ## Features
 
 - **Professional Redesign**: Space Grotesk typography, electric teal–purple palette, dot-grid hero background
@@ -29,7 +31,6 @@ PORTFOLIO-WEBSITE/
 ├── assets/
 │   └── images/
 │       ├── logo.jpg              # NIT Jamshedpur logo (subtle hero background)
-│       ├── me.jpg                # (unused — can delete)
 │       └── profile-pic.jpg       # Profile photo in hero section
 ├── .gitignore
 ├── Aastha_Bajpai_Resume.pdf      # Linked from Download Resume button
@@ -120,7 +121,6 @@ Toggle logic (click handler + `localStorage`) is in `script.js` under **"Theme T
 
 - [ ] Deploy ERP, BhashaShikho, House Price Predictor and replace disabled **Live Demo** buttons with real URLs
 - [ ] Connect contact form to Formspree or EmailJS (currently frontend-only)
-- [ ] Delete unused `me.jpg` from `assets/images/` if not needed
 
 ## Browser Support
 
