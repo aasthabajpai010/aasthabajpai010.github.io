@@ -1,6 +1,10 @@
 # Aastha Bajpai — Portfolio Website
 
 A modern, responsive personal portfolio for **Aastha Bajpai** — MCA student at NIT Jamshedpur and Full-Stack (MERN) Developer.
+```
+🔗 Live Site: https://aasthabajpai010.github.io/PORTFOLIO-WEBSITE/
+
+```
 
 ## Features
 
