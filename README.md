@@ -29,7 +29,6 @@ PORTFOLIO-WEBSITE/
 ├── assets/
 │   └── images/
 │       ├── logo.jpg              # NIT Jamshedpur logo (subtle hero background)
-│       ├── me.jpg                # (unused — can delete)
 │       └── profile-pic.jpg       # Profile photo in hero section
 ├── .gitignore
 ├── Aastha_Bajpai_Resume.pdf      # Linked from Download Resume button
