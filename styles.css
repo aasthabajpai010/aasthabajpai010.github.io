@@ -311,15 +311,16 @@ section { padding: 100px 0; }
 }
 
 .nit-logo-bg {
-    position: absolute;
-    bottom: 48px; left: 48px;
-    width: 180px; height: 180px;
-    background-image: url('assets/images/logo.jpg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    opacity: 0.04;
-    filter: grayscale(100%);
+    display: none;
+}
+
+/* Education card logos */
+.edu-logo {
+    width: 64px;
+    height: 64px;
+    object-fit: contain;
+    border-radius: var(--radius-sm);
+    margin-bottom: 4px;
 }
 
 .hero .container {
@@ -846,6 +847,20 @@ section { padding: 100px 0; }
 }
 
 .education-icon { font-size: 1.7rem; line-height: 1; }
+
+.edu-logo {
+    width: 72px;
+    height: 72px;
+    object-fit: contain;
+    border-radius: var(--radius-sm);
+    filter: grayscale(20%);
+    transition: var(--transition);
+}
+
+.education-card:hover .edu-logo {
+    filter: grayscale(0%);
+    transform: scale(1.05);
+}
 
 .education-degree {
     font-size: 0.92rem;
