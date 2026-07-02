@@ -378,16 +378,44 @@ section { padding: 100px 0; }
     box-shadow: var(--shadow-sm);
     position: relative;
     overflow: hidden;
+    isolation: isolate;
 }
 
+/* soft tint wash, fades in behind everything */
 .skill-pill::before {
     content: '';
     position: absolute;
     inset: 0;
-    background: linear-gradient(135deg, rgba(6, 214, 160, 0.15), rgba(139, 92, 246, 0.15));
+    background: linear-gradient(135deg, rgba(6, 214, 160, 0.12), rgba(139, 92, 246, 0.12));
     opacity: 0;
-    transition: var(--transition);
+    transition: opacity 0.3s ease;
     border-radius: var(--radius-pill);
+    z-index: 0;
+}
+
+/* the actual shine streak that sweeps across on hover */
+.skill-pill::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -60%;
+    width: 45%;
+    height: 100%;
+    background: linear-gradient(
+        115deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.55) 50%,
+        rgba(255, 255, 255, 0) 100%
+    );
+    transform: skewX(-20deg);
+    z-index: 1;
+    pointer-events: none;
+    transition: left 0.65s ease;
+}
+
+.skill-pill > * {
+    position: relative;
+    z-index: 2;
 }
 
 .skill-pill:hover {
@@ -398,6 +426,17 @@ section { padding: 100px 0; }
 }
 
 .skill-pill:hover::before { opacity: 1; }
+
+.skill-pill:hover::after { left: 120%; }
+
+[data-theme="dark"] .skill-pill::after {
+    background: linear-gradient(
+        115deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.18) 50%,
+        rgba(255, 255, 255, 0) 100%
+    );
+}
 
 .edu-location {
     font-size: 0.78rem;
@@ -660,27 +699,6 @@ section { padding: 100px 0; }
     display: flex;
     flex-wrap: wrap;
     gap: 9px;
-}
-
-.skill-pill {
-    font-size: 0.85rem;
-    font-weight: 500;
-    color: var(--text-primary);
-    background: var(--bg-card);
-    border: 1px solid var(--border-subtle);
-    border-radius: var(--radius-pill);
-    padding: 7px 16px;
-    transition: var(--transition);
-    cursor: default;
-    box-shadow: var(--shadow-sm);
-}
-
-.skill-pill:hover {
-    border-color: var(--primary);
-    color: var(--primary);
-    background: rgba(6, 214, 160, 0.06);
-    box-shadow: 0 0 0 3px rgba(6, 214, 160, 0.08);
-    transform: translateY(-1px);
 }
 
 /* === Experience === */
